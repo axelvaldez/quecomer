@@ -2,17 +2,21 @@
   "slug": "birrieria-anita",
   "name": "Birriería Anita",
   "tagline": "Estilo Sinaloa",
-  "categories": ["Tacos", "Birria", "Desayunos"],
+  "categories": [
+    "Tacos",
+    "Birria",
+    "Desayunos"
+  ],
   "meta": {
-    "hours": "7:00 am - 2:30 pm (Cerrado los Martes)",
-    "social": "Birriería Anita",
+    "hours": "7:00am a 2:30pm (Cerrado en Martes)",
+    "social": "-",
     "location": "Hermosillo"
   },
   "menu": [
     {
       "title": "Menú",
       "id": "alimentos",
-      "note": "* Tacos de cabeza y barbacoa. Cada Orden y Chica incluyen 1 tortilla c/asientos.",
+      "note": "* Tacos de cabeza y barbacoa. Cada Orden y Orden chica incluyen 1 tortilla c/asientos.",
       "groups": [
         {
           "subtitle": "Orden",
@@ -35,20 +39,20 @@
           ]
         },
         {
-          "subtitle": "Chicas",
+          "subtitle": "Órdenes Chicas",
           "items": [
             {
-              "name": "Chica Normal",
+              "name": "Orden Chica",
               "price": 75,
               "description": "Media orden con carne regular."
             },
             {
-              "name": "Chica Combinada",
+              "name": "Orden Chica Combinada",
               "price": 80,
               "description": "Media orden con carne regular y carne dorada."
             },
             {
-              "name": "Chica Dorada",
+              "name": "Orden Chica Dorada",
               "price": 90,
               "description": "Media orden con carne dorada (crujiente)."
             }
