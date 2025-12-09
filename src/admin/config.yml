@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: axelvaldez/quecomer
   branch: main
 
 media_folder: "src/assets/images"
