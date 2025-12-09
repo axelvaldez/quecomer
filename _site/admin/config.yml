@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/quecomer
+  repo: axelvaldez/quecomer
   branch: main
   auth_endpoint: api/auth
 
@@ -18,7 +18,7 @@ collections:
       - { label: "Slug", name: "slug", widget: "string", hint: "URL-friendly name (e.g., 'tacos-el-gordo')" }
       - { label: "Restaurant Name", name: "name", widget: "string" }
       - { label: "Tagline", name: "tagline", widget: "string", required: false }
-      - { label: "Categories", name: "categories", widget: "list", field: { label: "Category", widget: "string" } }
+      - { label: "Categories", name: "categories", widget: "list", field: { label: "Category", name: "category", widget: "string" } }
       - label: "Meta Information"
         name: "meta"
         widget: "object"
