@@ -2,10 +2,14 @@
   "slug": "gato-gordo",
   "name": "Gato Gordo",
   "tagline": "Comida Casera Chila",
-  "categories": ["Burritos", "Desayunos"],
+  "categories": [
+    "Burritos",
+    "Desayunos"
+  ],
   "meta": {
-    "hours": "Jue-Dom 9am-1pm",
-    "social": "@GATOGORDOCC"
+    "hours": "Miércoles a Domnigo 9am-1pm",
+    "social": "@GATOGORDOCC",
+    "location": "Pedro Villegas Ramírez #4 (Frente al Parque Madero)"
   },
   "menu": [
     {
@@ -15,33 +19,103 @@
         {
           "subtitle": "Buebitos",
           "items": [
-            { "name": "El Tradicional", "price": 90, "description": "2 huevos al gusto.", "includes": "Incluye: 1 guiso, frijolitos y tortillas." },
-            { "name": "Buebito con Jamón", "price": 80, "description": "Pa' los peques. 2 huevos revueltos con jamón.", "includes": "Incluye: Frijolitos y tortillas." }
+            {
+              "name": "El Tradicional",
+              "price": 90,
+              "description": "2 huevos al gusto.",
+              "includes": "Incluye: 1 guiso, frijolitos y tortillas."
+            },
+            {
+              "name": "Buebito con Jamón",
+              "price": 80,
+              "description": "Pa' los peques. 2 huevos revueltos con jamón.",
+              "includes": "Incluye: Frijolitos y tortillas."
+            }
           ]
         },
         {
           "subtitle": "Los Originales",
           "items": [
-            { "name": "Chila-Killa", "price": 130, "description": "Quesadilla doble con queso menonita, cilantro, cebolla morada, crema.", "includes": "Incluye: 2 huevos, 1 guiso, ahogo en salsa, frijolitos." },
-            { "name": "Encobijado", "price": 130, "description": "Tortilla con frijoles y queso menonita + 2 huevos + costra.", "includes": "Incluye: 2 huevos, 1 guiso, frijolitos, ahogo en salsa." },
-            { "name": "Gatacotes", "price": 140, "description": "3 tacos de guiso con queso menonita gratinado.", "includes": "Incluye: 1 huevo y guiso por taco, salsa." },
-            { "name": "Costraqueso", "price": 130, "description": "2 tortillas con una costra de queso menonita.", "includes": "Incluye: 2 huevos, 1 guiso, frijolitos, salsa." }
+            {
+              "name": "Chila-Killa",
+              "price": 130,
+              "description": "Quesadilla doble con queso menonita, cilantro, cebolla morada, crema.",
+              "includes": "Incluye: 2 huevos, 1 guiso, ahogo en salsa, frijolitos."
+            },
+            {
+              "name": "Encobijado",
+              "price": 130,
+              "description": "Tortilla con frijoles y queso menonita + 2 huevos + costra.",
+              "includes": "Incluye: 2 huevos, 1 guiso, frijolitos, ahogo en salsa."
+            },
+            {
+              "name": "Gatacotes",
+              "price": 140,
+              "description": "3 tacos de guiso con queso menonita gratinado.",
+              "includes": "Incluye: 1 huevo y guiso por taco, salsa."
+            },
+            {
+              "name": "Costraqueso",
+              "price": 130,
+              "description": "2 tortillas con una costra de queso menonita.",
+              "includes": "Incluye: 2 huevos, 1 guiso, frijolitos, salsa."
+            }
           ]
         },
         {
           "subtitle": "Purritos",
           "items": [
-            { "name": "Purrito Sabanero", "price": 110, "description": "Burro de tortilla sobaquera, dorado en plancha.", "includes": "Incluye: 2 huevos, 1 guiso, bañado en salsa." },
-            { "name": "Concha Royale", "price": 145, "description": "Purrito sabanero + costra de queso + ahogo.", "includes": "Incluye: 3 huevos, ahogo en salsa." },
-            { "name": "Macaco Royale", "price": 145, "description": "3 purritos de guiso y 1 de frijol, con costra de queso.", "includes": "Incluye: 2 huevos, 3 guisos, bañado en salsa." },
-            { "name": "Purritos y Taquitos", "price": 75, "description": "Orden de purritos o taquitos.", "variants": [{ "label": "Relleno Queso Menonita", "price": "+$15" }] }
+            {
+              "name": "Purrito Sabanero",
+              "price": 110,
+              "description": "Burro de tortilla sobaquera, dorado en plancha.",
+              "includes": "Incluye: 2 huevos, 1 guiso, bañado en salsa."
+            },
+            {
+              "name": "Concha Royale",
+              "price": 145,
+              "description": "Purrito sabanero + costra de queso + ahogo.",
+              "includes": "Incluye: 3 huevos, ahogo en salsa."
+            },
+            {
+              "name": "Macaco Royale",
+              "price": 145,
+              "description": "3 purritos de guiso y 1 de frijol, con costra de queso.",
+              "includes": "Incluye: 2 huevos, 3 guisos, bañado en salsa."
+            },
+            {
+              "name": "Purritos y Taquitos",
+              "price": 75,
+              "description": "Orden de purritos o taquitos.",
+              "variants": [
+                {
+                  "label": "Relleno Queso Menonita",
+                  "price": "+$15"
+                }
+              ]
+            }
           ]
         },
         {
           "subtitle": "Con Pan",
           "items": [
-            { "name": "Chanwich", "price": 110, "description": "Torta de telera con mantequilla, doradito a la plancha.", "includes": "Aderezo, costra, 2 huevos, jamón, cebolla, tomate." },
-            { "name": "¡¡¡MOLLEEETEEE!!!", "price": 75, "description": "Telera doradita con mantequilla, frijolitos y costra.", "variants": [{ "label": "Hazlo Molletorta", "price": "+$35" }] }
+            {
+              "name": "Chanwich",
+              "price": 110,
+              "description": "Torta de telera con mantequilla, doradito a la plancha.",
+              "includes": "Aderezo, costra, 2 huevos, jamón, cebolla, tomate."
+            },
+            {
+              "name": "¡¡¡MOLLEEETEEE!!!",
+              "price": 75,
+              "description": "Telera doradita con mantequilla, frijolitos y costra.",
+              "variants": [
+                {
+                  "label": "Hazlo Molletorta",
+                  "price": "+$35"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -51,16 +125,78 @@
       "groups": [
         {
           "items": [
-            { "name": "Quesadilla", "price": 35, "description": "Doble tortilla con queso menonita." },
-            { "name": "Purrito / Taquito", "price": 25, "description": "Burrito o taquito con guiso.", "variants": [{ "label": "De Frijol", "price": "$15" }, { "label": "Add Queso", "price": "+$10" }] },
-            { "name": "Gatacote", "price": 50, "description": "Taco con queso menonita, 1 guiso, 1 huevo, salsa." },
-            { "name": "Teleras", "price": 25, "description": "Dos mitades, suavecitas.", "variants": [{ "label": "1 mitad", "price": "$15" }] },
-            { "name": "Costra de Queso", "price": 25, "description": "Ponle una costra de queso menonita a cualquier platillo." },
-            { "name": "Tortillas Raspadas", "price": 40, "description": "Dos tortillas con costra de queso." },
-            { "name": "Orden de Huevos", "price": 35, "description": "2 huevos al gusto.", "variants": [{ "label": "+1 huevo", "price": "$20" }] },
-            { "name": "Ahogo en Salsa", "price": 30, "description": "Ahoga tu desayuno. Agrega cebolla, queso, cilantro." },
-            { "name": "Frijolitos", "price": 15, "description": "Orden de frijoles guisados con manteca vegetal." },
-            { "name": "Orden de Guiso", "price": 40, "description": "Una porción de cualquiera de nuestros guisos." }
+            {
+              "name": "Quesadilla",
+              "price": 35,
+              "description": "Doble tortilla con queso menonita."
+            },
+            {
+              "name": "Purrito / Taquito",
+              "price": 25,
+              "description": "Burrito o taquito con guiso.",
+              "variants": [
+                {
+                  "label": "De Frijol",
+                  "price": "$15"
+                },
+                {
+                  "label": "Add Queso",
+                  "price": "+$10"
+                }
+              ]
+            },
+            {
+              "name": "Gatacote",
+              "price": 50,
+              "description": "Taco con queso menonita, 1 guiso, 1 huevo, salsa."
+            },
+            {
+              "name": "Teleras",
+              "price": 25,
+              "description": "Dos mitades, suavecitas.",
+              "variants": [
+                {
+                  "label": "1 mitad",
+                  "price": "$15"
+                }
+              ]
+            },
+            {
+              "name": "Costra de Queso",
+              "price": 25,
+              "description": "Ponle una costra de queso menonita a cualquier platillo."
+            },
+            {
+              "name": "Tortillas Raspadas",
+              "price": 40,
+              "description": "Dos tortillas con costra de queso."
+            },
+            {
+              "name": "Orden de Huevos",
+              "price": 35,
+              "description": "2 huevos al gusto.",
+              "variants": [
+                {
+                  "label": "+1 huevo",
+                  "price": "$20"
+                }
+              ]
+            },
+            {
+              "name": "Ahogo en Salsa",
+              "price": 30,
+              "description": "Ahoga tu desayuno. Agrega cebolla, queso, cilantro."
+            },
+            {
+              "name": "Frijolitos",
+              "price": 15,
+              "description": "Orden de frijoles guisados con manteca vegetal."
+            },
+            {
+              "name": "Orden de Guiso",
+              "price": 40,
+              "description": "Una porción de cualquiera de nuestros guisos."
+            }
           ]
         }
       ]
@@ -71,11 +207,26 @@
       "groups": [
         {
           "items": [
-            { "name": "Chorizo con Papas", "description": "Chorizo con papitas y cebolla." },
-            { "name": "Machaca con Papas", "description": "Machaca regional con tomate, chile verde, cebolla." },
-            { "name": "Chicharrón", "description": "En Salsa Verde o Roja." },
-            { "name": "Carne con Chile", "description": "Res deshebrada en chile colorado." },
-            { "name": "Paparrajas", "description": "Rajas de chiles tatemados con crema." }
+            {
+              "name": "Chorizo con Papas",
+              "description": "Chorizo con papitas y cebolla."
+            },
+            {
+              "name": "Machaca con Papas",
+              "description": "Machaca regional con tomate, chile verde, cebolla."
+            },
+            {
+              "name": "Chicharrón",
+              "description": "En Salsa Verde o Roja."
+            },
+            {
+              "name": "Carne con Chile",
+              "description": "Res deshebrada en chile colorado."
+            },
+            {
+              "name": "Paparrajas",
+              "description": "Rajas de chiles tatemados con crema."
+            }
           ]
         }
       ]
@@ -85,8 +236,16 @@
       "groups": [
         {
           "items": [
-            { "name": "Bollito Nini&Co.", "price": 40, "description": "Ricas bolitas de pastel de zanahoria 100% caseros." },
-            { "name": "Galleta Corabilia", "price": 20, "description": "Galletas caseras de mantequilla de cacahuate." }
+            {
+              "name": "Bollito Nini&Co.",
+              "price": 40,
+              "description": "Ricas bolitas de pastel de zanahoria 100% caseros."
+            },
+            {
+              "name": "Galleta Corabilia",
+              "price": 20,
+              "description": "Galletas caseras de mantequilla de cacahuate."
+            }
           ]
         }
       ]
@@ -96,13 +255,41 @@
       "groups": [
         {
           "items": [
-            { "name": "Jugo de Naranja/Toronja", "price": 45, "description": "En temporada (420ml)." },
-            { "name": "Café", "price": 30, "description": "Rellenado con tus alimentos." },
-            { "name": "Limonada Natural", "price": 30, "description": "420ml." },
-            { "name": "Mimotza", "price": 40, "description": "420ml." },
-            { "name": "Coca Cola", "price": 15, "description": "235ml." },
-            { "name": "Peñafiel", "price": 20, "description": "355ml." },
-            { "name": "Botella de Agua", "price": 10, "description": "500ml." }
+            {
+              "name": "Jugo de Naranja/Toronja",
+              "price": 45,
+              "description": "En temporada (420ml)."
+            },
+            {
+              "name": "Café",
+              "price": 30,
+              "description": "Rellenado con tus alimentos."
+            },
+            {
+              "name": "Limonada Natural",
+              "price": 30,
+              "description": "420ml."
+            },
+            {
+              "name": "Mimotza",
+              "price": 40,
+              "description": "420ml."
+            },
+            {
+              "name": "Coca Cola",
+              "price": 15,
+              "description": "235ml."
+            },
+            {
+              "name": "Peñafiel",
+              "price": 20,
+              "description": "355ml."
+            },
+            {
+              "name": "Botella de Agua",
+              "price": 10,
+              "description": "500ml."
+            }
           ]
         }
       ]
