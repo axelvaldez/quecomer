@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: axelvaldez/quecomer
+  name: git-gateway
   branch: main
-  auth_endpoint: api/auth
-  base_url: https://quecomer.netlify.app
 
 media_folder: "src/assets/images"
 public_folder: "/assets/images"
