@@ -2,7 +2,6 @@ backend:
   name: github
   repo: axelvaldez/quecomer
   branch: main
-  auth_endpoint: api/auth
 
 media_folder: "src/assets/images"
 public_folder: "/assets/images"
@@ -15,34 +14,38 @@ collections:
     slug: "{{slug}}"
     format: json
     fields:
-      - { label: "Slug", name: "slug", widget: "string", hint: "URL-friendly name (e.g., 'tacos-el-gordo')" }
-      - { label: "Restaurant Name", name: "name", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "URL-friendly name (e.g., 'tacos-el-gordo')", required: false }
+      - { label: "Restaurant Name", name: "name", widget: "string", required: false }
       - { label: "Tagline", name: "tagline", widget: "string", required: false }
-      - { label: "Categories", name: "categories", widget: "list", field: { label: "Category", name: "category", widget: "string" } }
+      - { label: "Categories", name: "categories", widget: "list", field: { label: "Category", name: "category", widget: "string" }, required: false }
       - label: "Meta Information"
         name: "meta"
         widget: "object"
+        required: false
         fields:
-          - { label: "Hours", name: "hours", widget: "string" }
-          - { label: "Social Media Handle", name: "social", widget: "string" }
-          - { label: "Location (City/Neighborhood)", name: "location", widget: "string" }
+          - { label: "Hours", name: "hours", widget: "string", required: false }
+          - { label: "Social Media Handle", name: "social", widget: "string", required: false }
+          - { label: "Location (City/Neighborhood)", name: "location", widget: "string", required: false }
       - label: "Menu"
         name: "menu"
         widget: "list"
+        required: false
         fields:
-          - { label: "Section Title", name: "title", widget: "string", hint: "e.g., 'Breakfast', 'Drinks'" }
-          - { label: "Section ID", name: "id", widget: "string", hint: "lowercase, no spaces" }
+          - { label: "Section Title", name: "title", widget: "string", hint: "e.g., 'Breakfast', 'Drinks'", required: false }
+          - { label: "Section ID", name: "id", widget: "string", hint: "lowercase, no spaces", required: false }
           - { label: "Section Note", name: "note", widget: "string", required: false }
           - label: "Item Groups"
             name: "groups"
             widget: "list"
+            required: false
             fields:
-              - { label: "Group Name", name: "subtitle", widget: "string", hint: "e.g., 'Coffee', 'Tacos'" }
+              - { label: "Group Name", name: "subtitle", widget: "string", hint: "e.g., 'Coffee', 'Tacos'", required: false }
               - label: "Items"
                 name: "items"
                 widget: "list"
+                required: false
                 fields:
-                  - { label: "Item Name", name: "name", widget: "string" }
-                  - { label: "Price", name: "price", widget: "number" }
-                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "Item Name", name: "name", widget: "string", required: false }
+                  - { label: "Price", name: "price", widget: "number", required: false }
+                  - { label: "Description", name: "description", widget: "string", required: false }
                   - { label: "Special Tags", name: "includes", widget: "string", required: false, hint: "e.g., 'Best Seller'" }

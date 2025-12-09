@@ -57,6 +57,9 @@
                 {{ cat }}
             </a>
         {% endfor %}
+
+        <!-- 'Decide tú' pill appended as the last item in the pill list -->
+        <a href="#" id="random-btn" class="category-pill" style="background:#e6b800;color:#fff;border-radius:50px;padding:0.5rem 1.2rem;font-weight:600;">Decide tú</a>
     </div>
 
     <div class="grid">
@@ -71,6 +74,23 @@
             </a>
         {% endfor %}
     </div>
+
+        <script>
+            // Build an array of slugs from the rendered restaurants list
+            var slugs = [
+                {% for filename, restaurant in restaurants %}
+                    "{{ restaurant.slug }}"{% if not loop.last %},{% endif %}
+                {% endfor %}
+            ];
+
+            document.getElementById('random-btn').addEventListener('click', function () {
+                if (!slugs || slugs.length === 0) return;
+                var idx = Math.floor(Math.random() * slugs.length);
+                var slug = slugs[idx];
+                // Navigate to the menu page for the selected slug
+                window.location.href = '/menus/' + encodeURIComponent(slug) + '/';
+            });
+        </script>
 
 </body>
 </html>
