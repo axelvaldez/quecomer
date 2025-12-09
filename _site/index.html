@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Directory</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; background: #f4f4f4; }
+        h1 { text-align: center; color: #333; margin-bottom: 1.5rem; }
+        
+        /* --- New Category Styles --- */
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem;
+            margin-bottom: 2.5rem;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .category-pill {
+            background: white;
+            color: #555;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px; /* Pill shape */
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .category-pill:hover {
+            background: #e6b800; /* Matching your mustard accent */
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(230, 184, 0, 0.3);
+        }
+        /* --------------------------- */
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-decoration: none; color: inherit; transition: transform 0.2s; display: block; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .card h2 { margin: 0 0 0.5rem 0; font-size: 1.25rem; color: #e6b800; } /* Mustard yellow accent */
+        .card p { margin: 0; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <h1>Available Menus</h1>
+
+    <div class="category-list">
+        
+            <a href="/category/tacos/" class="category-pill">
+                Tacos
+            </a>
+        
+            <a href="/category/desayunos/" class="category-pill">
+                Desayunos
+            </a>
+        
+            <a href="/category/pan/" class="category-pill">
+                Pan
+            </a>
+        
+            <a href="/category/cafe/" class="category-pill">
+                Café
+            </a>
+        
+            <a href="/category/pizza/" class="category-pill">
+                Pizza
+            </a>
+        
+            <a href="/category/mariscos/" class="category-pill">
+                Mariscos
+            </a>
+        
+            <a href="/category/hamburguesas/" class="category-pill">
+                Hamburguesas
+            </a>
+        
+            <a href="/category/birria/" class="category-pill">
+                Birria
+            </a>
+        
+            <a href="/category/cabeza/" class="category-pill">
+                Cabeza
+            </a>
+        
+            <a href="/category/bar/" class="category-pill">
+                Bar
+            </a>
+        
+    </div>
+
+    <div class="grid">
+        
+        
+            <a href="/menus/birrieria-anita/" class="card">
+                <h2>Birriería Anita</h2>
+                <p>Estilo Sinaloa</p>
+                <div style="margin-top: 10px; font-size: 0.8em; color: #999;">
+                    Hermosillo
+                </div>
+            </a>
+        
+            <a href="/menus/gato-gordo/" class="card">
+                <h2>Gato Gordo</h2>
+                <p>Comida Casera Chila</p>
+                <div style="margin-top: 10px; font-size: 0.8em; color: #999;">
+                    Location N/A
+                </div>
+            </a>
+        
+            <a href="/menus/maleducados/" class="card">
+                <h2>Maleducados</h2>
+                <p>Pan de Masa Madre</p>
+                <div style="margin-top: 10px; font-size: 0.8em; color: #999;">
+                    Hermosillo
+                </div>
+            </a>
+        
+            <a href="/menus/taqueria-don-jose/" class="card">
+                <h2>Taquería &quot;Don Jose&quot;</h2>
+                <p>Ordene y Recoja</p>
+                <div style="margin-top: 10px; font-size: 0.8em; color: #999;">
+                    Hermosillo
+                </div>
+            </a>
+        
+    </div>
+
+</body>
+</html>

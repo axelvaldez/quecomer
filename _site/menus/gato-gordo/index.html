@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Gordo</title>
+    <style>
+        :root { --bg: #f9f9f9; --text: #1a1a1a; --accent: #e6b800; --muted: #666; }
+        body { font-family: system-ui, sans-serif; line-height: 1.5; color: var(--text); background: var(--bg); margin:0; }
+        .container { max-width: 600px; margin: 0 auto; background: #fff; min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        header { padding: 2rem 1.5rem; text-align: center; border-bottom: 1px solid #eee; }
+        h1 { margin: 0; font-size: 2rem; text-transform: uppercase; }
+        .tagline { color: var(--muted); font-style: italic; }
+        .meta-grid { font-size: 0.85rem; color: var(--muted); margin-top: 1rem; font-weight: 600; }
+        section { padding: 2rem 1.5rem; border-bottom: 8px solid var(--bg); }
+        h2.cat-title { border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 1.5rem; }
+        h3.sub-title { color: var(--accent); text-transform: uppercase; font-size: 1rem; margin-top: 2rem; }
+        .note { background: #fffbeb; border-left: 4px solid var(--accent); padding: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; }
+        .dish { margin-bottom: 1.5rem; border-bottom: 1px dashed #eee; padding-bottom: 1rem; }
+        .dish:last-child { border-bottom: none; }
+        .d-head { display: flex; justify-content: space-between; font-weight: bold; font-size: 1.1rem; }
+        .d-desc { color: var(--muted); font-size: 0.95rem; margin: 0.25rem 0; }
+        .d-meta { font-size: 0.85rem; font-style: italic; color: #888; display: block; }
+        .addon { display: inline-block; background: #eee; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; margin-top:5px; margin-right:5px; font-weight: bold;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Gato Gordo</h1>
+        <p class="tagline">Comida Casera Chila</p>
+        <div class="meta-grid">
+            <span>🕒 Jue-Dom 9am-1pm</span> | <span>📷 @GATOGORDOCC</span>
+        </div>
+    </header>
+    <main>
+        
+        <section>
+            <h2 class="cat-title">Especialidades</h2>
+            <div class="note"><strong>Nota:</strong> Tú Elige: Tortilla (Maíz/Harina) • Huevito (Tierno/Medio/Revuelto) • Salsa (Verde/Roja)</div>
+            
+                <h3 class="sub-title">Buebitos</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>El Tradicional</span><span>$90</span></div>
+                    <p class="d-desc">2 huevos al gusto.</p>
+                    <small class="d-meta">Incluye: 1 guiso, frijolitos y tortillas.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Buebito con Jamón</span><span>$80</span></div>
+                    <p class="d-desc">Pa&#39; los peques. 2 huevos revueltos con jamón.</p>
+                    <small class="d-meta">Incluye: Frijolitos y tortillas.</small>
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Los Originales</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chila-Killa</span><span>$130</span></div>
+                    <p class="d-desc">Quesadilla doble con queso menonita, cilantro, cebolla morada, crema.</p>
+                    <small class="d-meta">Incluye: 2 huevos, 1 guiso, ahogo en salsa, frijolitos.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Encobijado</span><span>$130</span></div>
+                    <p class="d-desc">Tortilla con frijoles y queso menonita + 2 huevos + costra.</p>
+                    <small class="d-meta">Incluye: 2 huevos, 1 guiso, frijolitos, ahogo en salsa.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Gatacotes</span><span>$140</span></div>
+                    <p class="d-desc">3 tacos de guiso con queso menonita gratinado.</p>
+                    <small class="d-meta">Incluye: 1 huevo y guiso por taco, salsa.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Costraqueso</span><span>$130</span></div>
+                    <p class="d-desc">2 tortillas con una costra de queso menonita.</p>
+                    <small class="d-meta">Incluye: 2 huevos, 1 guiso, frijolitos, salsa.</small>
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Purritos</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Purrito Sabanero</span><span>$110</span></div>
+                    <p class="d-desc">Burro de tortilla sobaquera, dorado en plancha.</p>
+                    <small class="d-meta">Incluye: 2 huevos, 1 guiso, bañado en salsa.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Concha Royale</span><span>$145</span></div>
+                    <p class="d-desc">Purrito sabanero + costra de queso + ahogo.</p>
+                    <small class="d-meta">Incluye: 3 huevos, ahogo en salsa.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Macaco Royale</span><span>$145</span></div>
+                    <p class="d-desc">3 purritos de guiso y 1 de frijol, con costra de queso.</p>
+                    <small class="d-meta">Incluye: 2 huevos, 3 guisos, bañado en salsa.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Purritos y Taquitos</span><span>$75</span></div>
+                    <p class="d-desc">Orden de purritos o taquitos.</p>
+                    
+                    
+                    <div><span class="addon">Relleno Queso Menonita +$15</span></div>
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Con Pan</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chanwich</span><span>$110</span></div>
+                    <p class="d-desc">Torta de telera con mantequilla, doradito a la plancha.</p>
+                    <small class="d-meta">Aderezo, costra, 2 huevos, jamón, cebolla, tomate.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>¡¡¡MOLLEEETEEE!!!</span><span>$75</span></div>
+                    <p class="d-desc">Telera doradita con mantequilla, frijolitos y costra.</p>
+                    
+                    
+                    <div><span class="addon">Hazlo Molletorta +$35</span></div>
+                    
+                </article>
+                
+            
+        </section>
+        
+        <section>
+            <h2 class="cat-title">Arma Tu Plato</h2>
+            
+            
+                
+                
+                <article class="dish">
+                    <div class="d-head"><span>Quesadilla</span><span>$35</span></div>
+                    <p class="d-desc">Doble tortilla con queso menonita.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Purrito / Taquito</span><span>$25</span></div>
+                    <p class="d-desc">Burrito o taquito con guiso.</p>
+                    
+                    
+                    <div><span class="addon">De Frijol $15</span><span class="addon">Add Queso +$10</span></div>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Gatacote</span><span>$50</span></div>
+                    <p class="d-desc">Taco con queso menonita, 1 guiso, 1 huevo, salsa.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Teleras</span><span>$25</span></div>
+                    <p class="d-desc">Dos mitades, suavecitas.</p>
+                    
+                    
+                    <div><span class="addon">1 mitad $15</span></div>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Costra de Queso</span><span>$25</span></div>
+                    <p class="d-desc">Ponle una costra de queso menonita a cualquier platillo.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tortillas Raspadas</span><span>$40</span></div>
+                    <p class="d-desc">Dos tortillas con costra de queso.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Orden de Huevos</span><span>$35</span></div>
+                    <p class="d-desc">2 huevos al gusto.</p>
+                    
+                    
+                    <div><span class="addon">+1 huevo $20</span></div>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Ahogo en Salsa</span><span>$30</span></div>
+                    <p class="d-desc">Ahoga tu desayuno. Agrega cebolla, queso, cilantro.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Frijolitos</span><span>$15</span></div>
+                    <p class="d-desc">Orden de frijoles guisados con manteca vegetal.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Orden de Guiso</span><span>$40</span></div>
+                    <p class="d-desc">Una porción de cualquiera de nuestros guisos.</p>
+                    
+                    
+                </article>
+                
+            
+        </section>
+        
+        <section>
+            <h2 class="cat-title">Nuestros Guisos</h2>
+            <div class="note"><strong>Nota:</strong> Disponibles para cualquier platillo que incluya guiso.</div>
+            
+                
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chorizo con Papas</span><span>$</span></div>
+                    <p class="d-desc">Chorizo con papitas y cebolla.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Machaca con Papas</span><span>$</span></div>
+                    <p class="d-desc">Machaca regional con tomate, chile verde, cebolla.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chicharrón</span><span>$</span></div>
+                    <p class="d-desc">En Salsa Verde o Roja.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Carne con Chile</span><span>$</span></div>
+                    <p class="d-desc">Res deshebrada en chile colorado.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Paparrajas</span><span>$</span></div>
+                    <p class="d-desc">Rajas de chiles tatemados con crema.</p>
+                    
+                    
+                </article>
+                
+            
+        </section>
+        
+        <section>
+            <h2 class="cat-title">Postres Caseros</h2>
+            
+            
+                
+                
+                <article class="dish">
+                    <div class="d-head"><span>Bollito Nini&amp;Co.</span><span>$40</span></div>
+                    <p class="d-desc">Ricas bolitas de pastel de zanahoria 100% caseros.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Galleta Corabilia</span><span>$20</span></div>
+                    <p class="d-desc">Galletas caseras de mantequilla de cacahuate.</p>
+                    
+                    
+                </article>
+                
+            
+        </section>
+        
+        <section>
+            <h2 class="cat-title">Bebidas</h2>
+            
+            
+                
+                
+                <article class="dish">
+                    <div class="d-head"><span>Jugo de Naranja/Toronja</span><span>$45</span></div>
+                    <p class="d-desc">En temporada (420ml).</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Café</span><span>$30</span></div>
+                    <p class="d-desc">Rellenado con tus alimentos.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Limonada Natural</span><span>$30</span></div>
+                    <p class="d-desc">420ml.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Mimotza</span><span>$40</span></div>
+                    <p class="d-desc">420ml.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Coca Cola</span><span>$15</span></div>
+                    <p class="d-desc">235ml.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Peñafiel</span><span>$20</span></div>
+                    <p class="d-desc">355ml.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Botella de Agua</span><span>$10</span></div>
+                    <p class="d-desc">500ml.</p>
+                    
+                    
+                </article>
+                
+            
+        </section>
+        
+    </main>
+</div>
+</body>
+</html>

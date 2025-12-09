@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/quecomer
+  branch: main
+  auth_endpoint: api/auth
+
+media_folder: "src/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "restaurants"
+    label: "Restaurants"
+    folder: "src/_data/restaurants"
+    create: true
+    slug: "{{slug}}"
+    format: json
+    fields:
+      - { label: "Slug", name: "slug", widget: "string", hint: "URL-friendly name (e.g., 'tacos-el-gordo')" }
+      - { label: "Restaurant Name", name: "name", widget: "string" }
+      - { label: "Tagline", name: "tagline", widget: "string", required: false }
+      - { label: "Categories", name: "categories", widget: "list", field: { label: "Category", widget: "string" } }
+      - label: "Meta Information"
+        name: "meta"
+        widget: "object"
+        fields:
+          - { label: "Hours", name: "hours", widget: "string" }
+          - { label: "Social Media Handle", name: "social", widget: "string" }
+          - { label: "Location (City/Neighborhood)", name: "location", widget: "string" }
+      - label: "Menu"
+        name: "menu"
+        widget: "list"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string", hint: "e.g., 'Breakfast', 'Drinks'" }
+          - { label: "Section ID", name: "id", widget: "string", hint: "lowercase, no spaces" }
+          - { label: "Section Note", name: "note", widget: "string", required: false }
+          - label: "Item Groups"
+            name: "groups"
+            widget: "list"
+            fields:
+              - { label: "Group Name", name: "subtitle", widget: "string", hint: "e.g., 'Coffee', 'Tacos'" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Item Name", name: "name", widget: "string" }
+                  - { label: "Price", name: "price", widget: "number" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "Special Tags", name: "includes", widget: "string", required: false, hint: "e.g., 'Best Seller'" }

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "slug": { "type": "string" },
+    "name": { "type": "string" },
+    "tagline": { "type": "string" },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "hours": { "type": "string" },
+        "social": { "type": "string" },
+        "location": { "type": "string" }
+      },
+      "required": ["hours", "social", "location"]
+    },
+    "menu": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "id": { "type": "string" },
+          "note": { "type": "string" },
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "subtitle": { "type": "string" },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": { "type": "string" },
+                      "price": { "type": "number" },
+                      "description": { "type": "string" },
+                      "includes": { "type": "string" }
+                    },
+                    "required": ["name", "price", "description"]
+                  }
+                }
+              },
+              "required": ["subtitle", "items"]
+            }
+          }
+        },
+        "required": ["title", "id", "groups"]
+      }
+    }
+  },
+  "required": ["slug", "name", "meta", "menu"]
+}

@@ -1,0 +1,34 @@
+[include image(s)]
+Extract this menu into a JSON file. Please strictly follow the structure and keys used in this template:
+
+{
+  "slug": "restaurant-name-slug", // URL friendly (e.g., "tacos-el-gordo")
+  "name": "Restaurant Name",
+  "tagline": "Short slogan or description", // If none, leave empty string
+  "categories": ["Category 1", "Category 2"], // e.g., ["Tacos", "Breakfast", "Seafood"]
+  "meta": {
+    "hours": "7:00 am - 2:30 pm",
+    "social": "Social Media Handle",
+    "location": "City or Neighborhood"
+  },
+  "menu": [
+    {
+      "title": "Section Title (e.g., Breakfast, Drinks)",
+      "id": "section-id", // lowercase, no spaces
+      "note": "Any general notes for this section (optional)",
+      "groups": [
+        {
+          "subtitle": "Group Name (e.g., Coffee, Tacos)", // Use this for column headers if parsing a matrix menu
+          "items": [
+            {
+              "name": "Item Name",
+              "price": 0, // Number format, no currency symbols
+              "description": "Ingredients or details",
+              "includes": "Tags like 'Best Seller' or specific availability (optional)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

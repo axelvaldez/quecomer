@@ -1,0 +1,159 @@
+{
+  "slug": "birrieria-anita",
+  "name": "Birriería Anita",
+  "tagline": "Estilo Sinaloa",
+  "categories": ["Tacos", "Birria", "Desayunos"],
+  "meta": {
+    "hours": "7:00 am - 2:30 pm (Cerrado los Martes)",
+    "social": "Birriería Anita",
+    "location": "Hermosillo"
+  },
+  "menu": [
+    {
+      "title": "Menú",
+      "id": "alimentos",
+      "note": "* Tacos de cabeza y barbacoa. Cada Orden y Chica incluyen 1 tortilla c/asientos.",
+      "groups": [
+        {
+          "subtitle": "Orden",
+          "items": [
+            {
+              "name": "Orden Normal",
+              "price": 85,
+              "description": "Plato completo con carne regular."
+            },
+            {
+              "name": "Orden Combinada",
+              "price": 90,
+              "description": "Plato completo con carne regular y carne dorada."
+            },
+            {
+              "name": "Orden Dorada",
+              "price": 100,
+              "description": "Plato completo con carne dorada (crujiente)."
+            }
+          ]
+        },
+        {
+          "subtitle": "Chicas",
+          "items": [
+            {
+              "name": "Chica Normal",
+              "price": 75,
+              "description": "Media orden con carne regular."
+            },
+            {
+              "name": "Chica Combinada",
+              "price": 80,
+              "description": "Media orden con carne regular y carne dorada."
+            },
+            {
+              "name": "Chica Dorada",
+              "price": 90,
+              "description": "Media orden con carne dorada (crujiente)."
+            }
+          ]
+        },
+        {
+          "subtitle": "Tacos",
+          "items": [
+            {
+              "name": "Taco Normal",
+              "price": 22,
+              "description": "Taco con carne regular."
+            },
+            {
+              "name": "Taco Combinado",
+              "price": 25,
+              "description": "Taco con carne regular y carne dorada."
+            },
+            {
+              "name": "Taco Dorado",
+              "price": 30,
+              "description": "Taco con carne dorada (crujiente)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Para Llevar",
+      "id": "para-llevar",
+      "note": "Porciones por litro y medio litro.",
+      "groups": [
+        {
+          "subtitle": "Litro",
+          "items": [
+            {
+              "name": "Litro Normal",
+              "price": 175,
+              "description": "Carne regular."
+            },
+            {
+              "name": "Litro Combinado",
+              "price": 185,
+              "description": "Carne regular y carne dorada."
+            },
+            {
+              "name": "Litro Dorado",
+              "price": 205,
+              "description": "Carne dorada (crujiente)."
+            }
+          ]
+        },
+        {
+          "subtitle": "1/2 Litro",
+          "items": [
+            {
+              "name": "1/2 Litro Normal",
+              "price": 90,
+              "description": "Carne regular."
+            },
+            {
+              "name": "1/2 Litro Combinado",
+              "price": 95,
+              "description": "Carne regular y carne dorada."
+            },
+            {
+              "name": "1/2 Litro Dorado",
+              "price": 105,
+              "description": "Carne dorada (crujiente)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bebidas y Extras",
+      "id": "extras",
+      "note": "",
+      "groups": [
+        {
+          "subtitle": "Bebidas",
+          "items": [
+            {
+              "name": "Refrescos y aguas frescas",
+              "price": 15,
+              "description": "Variedad de sabores."
+            }
+          ]
+        },
+        {
+          "subtitle": "Extras",
+          "items": [
+            {
+              "name": "Requesón",
+              "price": 20,
+              "description": "Complemento."
+            },
+            {
+              "name": "Tortilla con asientos extra",
+              "price": 5,
+              "description": "Tortilla preparada con asientos."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

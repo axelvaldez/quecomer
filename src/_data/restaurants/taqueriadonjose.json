@@ -1,0 +1,122 @@
+{
+  "slug": "taqueria-don-jose",
+  "name": "Taquería \"Don Jose\"",
+  "tagline": "Ordene y Recoja",
+  "categories": ["Tacos", "Desayunos"],
+  "meta": {
+    "hours": "No especificado",
+    "social": "Taquería Don Jose",
+    "location": "Hermosillo"
+  },
+  "menu": [
+    {
+      "title": "Tacos de Guisado",
+      "id": "tacos",
+      "note": "Precio por taco: $30. Disponibles en tortilla de Harina o Maíz.",
+      "groups": [
+        {
+          "subtitle": "Menú General",
+          "items": [
+            {
+              "name": "Taco de Huevo con Chorizo",
+              "price": 30,
+              "description": "Guisado de huevo con chorizo."
+            },
+            {
+              "name": "Taco de Huevo con Nopal",
+              "price": 30,
+              "description": "Guisado de huevo con nopales."
+            },
+            {
+              "name": "Taco de Huevo con Salchicha",
+              "price": 30,
+              "description": "Guisado de huevo con salchicha."
+            },
+            {
+              "name": "Taco de Huevo con Papas",
+              "price": 30,
+              "description": "Guisado de huevo con papas."
+            },
+            {
+              "name": "Taco de Huevo con Chile Verde",
+              "price": 30,
+              "description": "Guisado de huevo con chile verde."
+            },
+            {
+              "name": "Taco de Papas con Chorizo",
+              "price": 30,
+              "description": "Guisado de papas con chorizo."
+            },
+            {
+              "name": "Taco de Papas con Machaca",
+              "price": 30,
+              "description": "Guisado de papas con machaca."
+            },
+            {
+              "name": "Taco de Papas con Chilorio",
+              "price": 30,
+              "description": "Guisado de papas con chilorio."
+            },
+            {
+              "name": "Taco de Papas con Deshebrada",
+              "price": 30,
+              "description": "Guisado de papas con carne deshebrada."
+            },
+            {
+              "name": "Taco de Carne con Chile",
+              "price": 30,
+              "description": "Guisado de carne con chile."
+            },
+            {
+              "name": "Taco de Chicharrón en Salsa",
+              "price": 30,
+              "description": "Guisado de chicharrón en salsa."
+            },
+            {
+              "name": "Taco de Frijol con Chicharrón",
+              "price": 30,
+              "description": "Guisado de frijol con chicharrón."
+            },
+            {
+              "name": "Taco de Frijol Solo",
+              "price": 30,
+              "description": "Taco de frijoles."
+            },
+            {
+              "name": "Taco de Bistec Ranchero",
+              "price": 30,
+              "description": "Guisado de bistec ranchero."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Especiales",
+      "id": "especiales",
+      "note": "",
+      "groups": [
+        {
+          "subtitle": "Quesadillas y Otros",
+          "items": [
+            {
+              "name": "Quesadilla Sencilla",
+              "price": 50,
+              "description": "Quesadilla clásica de queso."
+            },
+            {
+              "name": "Taco de Barbacoa",
+              "price": 30,
+              "description": "Taco de barbacoa tradicional."
+            },
+            {
+              "name": "Quesadilla con Carne",
+              "price": 60,
+              "description": "Opciones: Carne con chile, Deshebrada, Bistec Ranchero o Chicharrón."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

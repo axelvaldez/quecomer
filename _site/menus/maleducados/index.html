@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maleducados</title>
+    <style>
+        :root { --bg: #f9f9f9; --text: #1a1a1a; --accent: #e6b800; --muted: #666; }
+        body { font-family: system-ui, sans-serif; line-height: 1.5; color: var(--text); background: var(--bg); margin:0; }
+        .container { max-width: 600px; margin: 0 auto; background: #fff; min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        header { padding: 2rem 1.5rem; text-align: center; border-bottom: 1px solid #eee; }
+        h1 { margin: 0; font-size: 2rem; text-transform: uppercase; }
+        .tagline { color: var(--muted); font-style: italic; }
+        .meta-grid { font-size: 0.85rem; color: var(--muted); margin-top: 1rem; font-weight: 600; }
+        section { padding: 2rem 1.5rem; border-bottom: 8px solid var(--bg); }
+        h2.cat-title { border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 1.5rem; }
+        h3.sub-title { color: var(--accent); text-transform: uppercase; font-size: 1rem; margin-top: 2rem; }
+        .note { background: #fffbeb; border-left: 4px solid var(--accent); padding: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; }
+        .dish { margin-bottom: 1.5rem; border-bottom: 1px dashed #eee; padding-bottom: 1rem; }
+        .dish:last-child { border-bottom: none; }
+        .d-head { display: flex; justify-content: space-between; font-weight: bold; font-size: 1.1rem; }
+        .d-desc { color: var(--muted); font-size: 0.95rem; margin: 0.25rem 0; }
+        .d-meta { font-size: 0.85rem; font-style: italic; color: #888; display: block; }
+        .addon { display: inline-block; background: #eee; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; margin-top:5px; margin-right:5px; font-weight: bold;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Maleducados</h1>
+        <p class="tagline">Pan de Masa Madre</p>
+        <div class="meta-grid">
+            <span>🕒 8am - 2pm</span> | <span>📷 Maleducados</span>
+        </div>
+    </header>
+    <main>
+        
+        <section>
+            <h2 class="cat-title">Bebidas</h2>
+            <div class="note"><strong>Nota:</strong> Personaliza: Leche vegetal +$15 • Haz tu bebida fría +$10 • Todo es preparado en el momento.</div>
+            
+                <h3 class="sub-title">Café</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Espresso doble</span><span>$45</span></div>
+                    <p class="d-desc">2oz de espresso (60ml).</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Espresso doble cortado</span><span>$50</span></div>
+                    <p class="d-desc">2oz de espresso (60ml) con un poco de leche.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Flat White</span><span>$55</span></div>
+                    <p class="d-desc">2oz de espresso con leche. Bebida con mayor cantidad de leche cremada que un cortado pero menos que un capuccino.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Capuccino</span><span>$55</span></div>
+                    <p class="d-desc">2oz de espresso con leche. Bebida con más leche cremada que un flat white, pero menos que un latte.</p>
+                    <small class="d-meta">♥ Lo más pedido</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Latte</span><span>$65</span></div>
+                    <p class="d-desc">2oz de espresso con una mayor cantidad de leche cremada que un capuccino.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Espresso americano</span><span>$50</span></div>
+                    <p class="d-desc">2oz de espresso (60ml) con agua caliente.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Café en prensa individual</span><span>$50</span></div>
+                    <p class="d-desc">Método de especialidad con café molido grueso para 1-2 tazas.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Café en prensa grande</span><span>$100</span></div>
+                    <p class="d-desc">Método de especialidad con café molido grueso para 3-4 tazas.</p>
+                    <small class="d-meta">♥ Lo más pedido</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Cold Brew</span><span>$55</span></div>
+                    <p class="d-desc">Método de extracción de café en frío (18 horas).</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Mocaccino</span><span>$65</span></div>
+                    <p class="d-desc">Bebida preparada con leche, espresso, cacao y canela.</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Té</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chai latte</span><span>$55</span></div>
+                    <p class="d-desc">Mezcla de la casa a base de té negro y especias con leche.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Leche dorada</span><span>$55</span></div>
+                    <p class="d-desc">Mezcla de la casa a base de cúrcuma y otras especias, endulzado con miel y leche de coco.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Infusiones</span><span>$40</span></div>
+                    <p class="d-desc">Pregunta por disponibilidad de sabores.</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Jugos Naturales</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Jugo de naranja</span><span>$45</span></div>
+                    <p class="d-desc">Jugo de naranja natural con jengibre.</p>
+                    <small class="d-meta">♥ Lo más pedido</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Jugo rojo</span><span>$55</span></div>
+                    <p class="d-desc">Base de jugo de naranja con extracto fresco de betabel y zanahoria.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Jugo verde</span><span>$55</span></div>
+                    <p class="d-desc">Base de jugo de naranja con apio, nopal, espinaca y limón eureka.</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Otras Bebidas</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Soda del día</span><span>$55</span></div>
+                    <p class="d-desc">Soda a base de jarabe natural de fruta de temporada.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Agua del día</span><span>$50</span></div>
+                    <p class="d-desc">Agua fresca a base de ingredientes naturales de temporada.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chocolate caliente</span><span>$65</span></div>
+                    <p class="d-desc">Mezcla de la casa con cacao natural y especias.</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Listo Para Llevar</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Cold Brew Enlatado</span><span>$90</span></div>
+                    <p class="d-desc">Nuestro Cold Brew en lata para llevar.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Kombucha</span><span>$70</span></div>
+                    <p class="d-desc">Bebida fermentada hecha con té, azúcar, bacterias y levaduras.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Ginger Ale</span><span>$70</span></div>
+                    <p class="d-desc">Bebida fermentada a base de jengibre y azúcar.</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Especiales</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Mistery drink</span><span>$65</span></div>
+                    <p class="d-desc">Bebida personalizada por barista, puede ser fría o caliente.</p>
+                    
+                    
+                </article>
+                
+            
+        </section>
+        
+        <section>
+            <h2 class="cat-title">Menú por la Mañana</h2>
+            <div class="note"><strong>Nota:</strong> Disponible 8am a 2pm. ★ Pregunta por el pan dulce del día.</div>
+            
+                <h3 class="sub-title">Tostas Sourdough</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tosta de huevo y tocino</span><span>$115</span></div>
+                    <p class="d-desc">Huevo revuelto, Tocino, Tomate cherry, Mayonesa, Pimienta, Hogaza.</p>
+                    <small class="d-meta">Disponible de 8am a 1pm.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tosta de huevo y aguacate</span><span>$130</span></div>
+                    <p class="d-desc">Huevo revuelto, Aguacate, Chile Serrano, Rábanos, Cilantro, Pimienta, Hogaza.</p>
+                    <small class="d-meta">♥ Lo más pedido. Disponible de 8am a 1pm.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tosta de tofu</span><span>$130</span></div>
+                    <p class="d-desc">Aguacate, Salteado de tofu con verduras, Especias, Salsa verde, Hogaza.</p>
+                    <small class="d-meta">Ⓥ Opción Vegana. Disponible de 8am a 1pm.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tosta de arúgula</span><span>$140</span></div>
+                    <p class="d-desc">Queso de cabra especiado, Arúgula, Zanahoria, Chile seco, Vinagreta de limón, Queso Chihuahua, Hogaza.</p>
+                    <small class="d-meta">♥ Lo más pedido</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tosta de jamón serrano</span><span>$130</span></div>
+                    <p class="d-desc">Queso ricotta, Durazno o Melón (según temporada), Jamón serrano, Menta, Miel de abeja, Pimienta, Hogaza.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tosta de hummus y aguacate</span><span>$115</span></div>
+                    <p class="d-desc">Aguacate, Hummus de la casa, Pepino, Chile seco, Hogaza.</p>
+                    <small class="d-meta">♥ Lo más pedido. Ⓥ Opción Vegana.</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tosta de mozzarella</span><span>$130</span></div>
+                    <p class="d-desc">Queso mozzarella fresco, Tomate cherry, Chile seco, Albahaca fresca, Aceite de oliva, Pimienta, Hogaza.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tosta de pera</span><span>$115</span></div>
+                    <p class="d-desc">Queso de cabra, Pera, Miel de abeja, Pistache, Hogaza.</p>
+                    <small class="d-meta">♥ Lo más pedido</small>
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Entradas</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Bowl de hummus</span><span>$80</span></div>
+                    <p class="d-desc">Hummus de la casa acompañado con pan de masa madre tostado.</p>
+                    <small class="d-meta">Ⓥ Opción Vegana</small>
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Bowl con fruta y granola</span><span>$90</span></div>
+                    <p class="d-desc">Fruta de temporada, Granola de la casa, Jugo de naranja, Miel de abeja.</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Ensaladas</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Ensalada panzanella</span><span>$130</span></div>
+                    <p class="d-desc">Mezcla de lechugas, Tomate fresco, Zanahoria, Tomate deshidratado, Cebolla morada, Ajo, Trozos de pan, Queso feta, Vinagre balsámico.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Ensalada de fresas</span><span>$130</span></div>
+                    <p class="d-desc">Mezcla de lechugas, Fresas, Blueberries, Pistaches, Queso de cabra, Vinagreta de guayaba.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Side de ensalada</span><span>$65</span></div>
+                    <p class="d-desc">Media ensalada para acompañar tu tosta, servida en el mismo plato.</p>
+                    <small class="d-meta">♥ Lo más pedido</small>
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Especiales</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Pan francés</span><span>$130</span></div>
+                    <p class="d-desc">Pan de masa madre, Mezcla de la casa, Fruta de temporada, Azúcar morena, Canela, Miel de Maple.</p>
+                    <small class="d-meta">Disponible de 8am a 1pm.</small>
+                    
+                </article>
+                
+            
+        </section>
+        
+    </main>
+</div>
+</body>
+</html>

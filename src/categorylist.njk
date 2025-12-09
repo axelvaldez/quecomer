@@ -1,0 +1,18 @@
+---
+pagination:
+  data: categoriesList # You define this list in _data/categoriesList.json
+  size: 1
+  alias: cat
+permalink: "category/{{ cat | slugify }}/"
+layout: layouts/category.njk
+---
+
+<h1>{{ cat }} Places</h1>
+
+<ul>
+{% for restaurant in restaurants %}
+  {% if cat in restaurant.categories %}
+    <li><a href="/restaurants/{{ restaurant.slug }}">{{ restaurant.name }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

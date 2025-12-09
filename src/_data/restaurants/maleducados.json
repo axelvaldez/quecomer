@@ -1,0 +1,274 @@
+{
+  "slug": "maleducados",
+  "name": "Maleducados",
+  "tagline": "Pan de Masa Madre",
+  "categories": ["Pan", "Café", "Desayunos"],
+  "meta": {
+    "hours": "8am - 2pm",
+    "social": "Maleducados",
+    "location": "Hermosillo"
+  },
+  "menu": [
+    {
+      "title": "Bebidas",
+      "id": "bebidas",
+      "note": "Personaliza: Leche vegetal +$15 • Haz tu bebida fría +$10 • Todo es preparado en el momento.",
+      "groups": [
+        {
+          "subtitle": "Café",
+          "items": [
+            {
+              "name": "Espresso doble",
+              "price": 45,
+              "description": "2oz de espresso (60ml)."
+            },
+            {
+              "name": "Espresso doble cortado",
+              "price": 50,
+              "description": "2oz de espresso (60ml) con un poco de leche."
+            },
+            {
+              "name": "Flat White",
+              "price": 55,
+              "description": "2oz de espresso con leche. Bebida con mayor cantidad de leche cremada que un cortado pero menos que un capuccino."
+            },
+            {
+              "name": "Capuccino",
+              "price": 55,
+              "description": "2oz de espresso con leche. Bebida con más leche cremada que un flat white, pero menos que un latte.",
+              "includes": "♥ Lo más pedido"
+            },
+            {
+              "name": "Latte",
+              "price": 65,
+              "description": "2oz de espresso con una mayor cantidad de leche cremada que un capuccino."
+            },
+            {
+              "name": "Espresso americano",
+              "price": 50,
+              "description": "2oz de espresso (60ml) con agua caliente."
+            },
+            {
+              "name": "Café en prensa individual",
+              "price": 50,
+              "description": "Método de especialidad con café molido grueso para 1-2 tazas."
+            },
+            {
+              "name": "Café en prensa grande",
+              "price": 100,
+              "description": "Método de especialidad con café molido grueso para 3-4 tazas.",
+              "includes": "♥ Lo más pedido"
+            },
+            {
+              "name": "Cold Brew",
+              "price": 55,
+              "description": "Método de extracción de café en frío (18 horas)."
+            },
+            {
+              "name": "Mocaccino",
+              "price": 65,
+              "description": "Bebida preparada con leche, espresso, cacao y canela."
+            }
+          ]
+        },
+        {
+          "subtitle": "Té",
+          "items": [
+            {
+              "name": "Chai latte",
+              "price": 55,
+              "description": "Mezcla de la casa a base de té negro y especias con leche."
+            },
+            {
+              "name": "Leche dorada",
+              "price": 55,
+              "description": "Mezcla de la casa a base de cúrcuma y otras especias, endulzado con miel y leche de coco."
+            },
+            {
+              "name": "Infusiones",
+              "price": 40,
+              "description": "Pregunta por disponibilidad de sabores."
+            }
+          ]
+        },
+        {
+          "subtitle": "Jugos Naturales",
+          "items": [
+            {
+              "name": "Jugo de naranja",
+              "price": 45,
+              "description": "Jugo de naranja natural con jengibre.",
+              "includes": "♥ Lo más pedido"
+            },
+            {
+              "name": "Jugo rojo",
+              "price": 55,
+              "description": "Base de jugo de naranja con extracto fresco de betabel y zanahoria."
+            },
+            {
+              "name": "Jugo verde",
+              "price": 55,
+              "description": "Base de jugo de naranja con apio, nopal, espinaca y limón eureka."
+            }
+          ]
+        },
+        {
+          "subtitle": "Otras Bebidas",
+          "items": [
+            {
+              "name": "Soda del día",
+              "price": 55,
+              "description": "Soda a base de jarabe natural de fruta de temporada."
+            },
+            {
+              "name": "Agua del día",
+              "price": 50,
+              "description": "Agua fresca a base de ingredientes naturales de temporada."
+            },
+            {
+              "name": "Chocolate caliente",
+              "price": 65,
+              "description": "Mezcla de la casa con cacao natural y especias."
+            }
+          ]
+        },
+        {
+          "subtitle": "Listo Para Llevar",
+          "items": [
+            {
+              "name": "Cold Brew Enlatado",
+              "price": 90,
+              "description": "Nuestro Cold Brew en lata para llevar."
+            },
+            {
+              "name": "Kombucha",
+              "price": 70,
+              "description": "Bebida fermentada hecha con té, azúcar, bacterias y levaduras."
+            },
+            {
+              "name": "Ginger Ale",
+              "price": 70,
+              "description": "Bebida fermentada a base de jengibre y azúcar."
+            }
+          ]
+        },
+        {
+          "subtitle": "Especiales",
+          "items": [
+            {
+              "name": "Mistery drink",
+              "price": 65,
+              "description": "Bebida personalizada por barista, puede ser fría o caliente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menú por la Mañana",
+      "id": "alimentos",
+      "note": "Disponible 8am a 2pm. ★ Pregunta por el pan dulce del día.",
+      "groups": [
+        {
+          "subtitle": "Tostas Sourdough",
+          "items": [
+            {
+              "name": "Tosta de huevo y tocino",
+              "price": 115,
+              "description": "Huevo revuelto, Tocino, Tomate cherry, Mayonesa, Pimienta, Hogaza.",
+              "includes": "Disponible de 8am a 1pm."
+            },
+            {
+              "name": "Tosta de huevo y aguacate",
+              "price": 130,
+              "description": "Huevo revuelto, Aguacate, Chile Serrano, Rábanos, Cilantro, Pimienta, Hogaza.",
+              "includes": "♥ Lo más pedido. Disponible de 8am a 1pm."
+            },
+            {
+              "name": "Tosta de tofu",
+              "price": 130,
+              "description": "Aguacate, Salteado de tofu con verduras, Especias, Salsa verde, Hogaza.",
+              "includes": "Ⓥ Opción Vegana. Disponible de 8am a 1pm."
+            },
+            {
+              "name": "Tosta de arúgula",
+              "price": 140,
+              "description": "Queso de cabra especiado, Arúgula, Zanahoria, Chile seco, Vinagreta de limón, Queso Chihuahua, Hogaza.",
+              "includes": "♥ Lo más pedido"
+            },
+            {
+              "name": "Tosta de jamón serrano",
+              "price": 130,
+              "description": "Queso ricotta, Durazno o Melón (según temporada), Jamón serrano, Menta, Miel de abeja, Pimienta, Hogaza."
+            },
+            {
+              "name": "Tosta de hummus y aguacate",
+              "price": 115,
+              "description": "Aguacate, Hummus de la casa, Pepino, Chile seco, Hogaza.",
+              "includes": "♥ Lo más pedido. Ⓥ Opción Vegana."
+            },
+            {
+              "name": "Tosta de mozzarella",
+              "price": 130,
+              "description": "Queso mozzarella fresco, Tomate cherry, Chile seco, Albahaca fresca, Aceite de oliva, Pimienta, Hogaza."
+            },
+            {
+              "name": "Tosta de pera",
+              "price": 115,
+              "description": "Queso de cabra, Pera, Miel de abeja, Pistache, Hogaza.",
+              "includes": "♥ Lo más pedido"
+            }
+          ]
+        },
+        {
+          "subtitle": "Entradas",
+          "items": [
+            {
+              "name": "Bowl de hummus",
+              "price": 80,
+              "description": "Hummus de la casa acompañado con pan de masa madre tostado.",
+              "includes": "Ⓥ Opción Vegana"
+            },
+            {
+              "name": "Bowl con fruta y granola",
+              "price": 90,
+              "description": "Fruta de temporada, Granola de la casa, Jugo de naranja, Miel de abeja."
+            }
+          ]
+        },
+        {
+          "subtitle": "Ensaladas",
+          "items": [
+            {
+              "name": "Ensalada panzanella",
+              "price": 130,
+              "description": "Mezcla de lechugas, Tomate fresco, Zanahoria, Tomate deshidratado, Cebolla morada, Ajo, Trozos de pan, Queso feta, Vinagre balsámico."
+            },
+            {
+              "name": "Ensalada de fresas",
+              "price": 130,
+              "description": "Mezcla de lechugas, Fresas, Blueberries, Pistaches, Queso de cabra, Vinagreta de guayaba."
+            },
+            {
+              "name": "Side de ensalada",
+              "price": 65,
+              "description": "Media ensalada para acompañar tu tosta, servida en el mismo plato.",
+              "includes": "♥ Lo más pedido"
+            }
+          ]
+        },
+        {
+          "subtitle": "Especiales",
+          "items": [
+            {
+              "name": "Pan francés",
+              "price": 130,
+              "description": "Pan de masa madre, Mezcla de la casa, Fruta de temporada, Azúcar morena, Canela, Miel de Maple.",
+              "includes": "Disponible de 8am a 1pm."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

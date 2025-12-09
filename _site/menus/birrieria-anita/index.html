@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birriería Anita</title>
+    <style>
+        :root { --bg: #f9f9f9; --text: #1a1a1a; --accent: #e6b800; --muted: #666; }
+        body { font-family: system-ui, sans-serif; line-height: 1.5; color: var(--text); background: var(--bg); margin:0; }
+        .container { max-width: 600px; margin: 0 auto; background: #fff; min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        header { padding: 2rem 1.5rem; text-align: center; border-bottom: 1px solid #eee; }
+        h1 { margin: 0; font-size: 2rem; text-transform: uppercase; }
+        .tagline { color: var(--muted); font-style: italic; }
+        .meta-grid { font-size: 0.85rem; color: var(--muted); margin-top: 1rem; font-weight: 600; }
+        section { padding: 2rem 1.5rem; border-bottom: 8px solid var(--bg); }
+        h2.cat-title { border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 1.5rem; }
+        h3.sub-title { color: var(--accent); text-transform: uppercase; font-size: 1rem; margin-top: 2rem; }
+        .note { background: #fffbeb; border-left: 4px solid var(--accent); padding: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; }
+        .dish { margin-bottom: 1.5rem; border-bottom: 1px dashed #eee; padding-bottom: 1rem; }
+        .dish:last-child { border-bottom: none; }
+        .d-head { display: flex; justify-content: space-between; font-weight: bold; font-size: 1.1rem; }
+        .d-desc { color: var(--muted); font-size: 0.95rem; margin: 0.25rem 0; }
+        .d-meta { font-size: 0.85rem; font-style: italic; color: #888; display: block; }
+        .addon { display: inline-block; background: #eee; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; margin-top:5px; margin-right:5px; font-weight: bold;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Birriería Anita</h1>
+        <p class="tagline">Estilo Sinaloa</p>
+        <div class="meta-grid">
+            <span>🕒 7:00 am - 2:30 pm (Cerrado los Martes)</span> | <span>📷 Birriería Anita</span>
+        </div>
+    </header>
+    <main>
+        
+        <section>
+            <h2 class="cat-title">Menú</h2>
+            <div class="note"><strong>Nota:</strong> * Tacos de cabeza y barbacoa. Cada Orden y Chica incluyen 1 tortilla c/asientos.</div>
+            
+                <h3 class="sub-title">Orden</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Orden Normal</span><span>$85</span></div>
+                    <p class="d-desc">Plato completo con carne regular.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Orden Combinada</span><span>$90</span></div>
+                    <p class="d-desc">Plato completo con carne regular y carne dorada.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Orden Dorada</span><span>$100</span></div>
+                    <p class="d-desc">Plato completo con carne dorada (crujiente).</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Chicas</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chica Normal</span><span>$75</span></div>
+                    <p class="d-desc">Media orden con carne regular.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chica Combinada</span><span>$80</span></div>
+                    <p class="d-desc">Media orden con carne regular y carne dorada.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Chica Dorada</span><span>$90</span></div>
+                    <p class="d-desc">Media orden con carne dorada (crujiente).</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Tacos</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Taco Normal</span><span>$22</span></div>
+                    <p class="d-desc">Taco con carne regular.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Taco Combinado</span><span>$25</span></div>
+                    <p class="d-desc">Taco con carne regular y carne dorada.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Taco Dorado</span><span>$30</span></div>
+                    <p class="d-desc">Taco con carne dorada (crujiente).</p>
+                    
+                    
+                </article>
+                
+            
+        </section>
+        
+        <section>
+            <h2 class="cat-title">Para Llevar</h2>
+            <div class="note"><strong>Nota:</strong> Porciones por litro y medio litro.</div>
+            
+                <h3 class="sub-title">Litro</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Litro Normal</span><span>$175</span></div>
+                    <p class="d-desc">Carne regular.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Litro Combinado</span><span>$185</span></div>
+                    <p class="d-desc">Carne regular y carne dorada.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Litro Dorado</span><span>$205</span></div>
+                    <p class="d-desc">Carne dorada (crujiente).</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">1/2 Litro</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>1/2 Litro Normal</span><span>$90</span></div>
+                    <p class="d-desc">Carne regular.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>1/2 Litro Combinado</span><span>$95</span></div>
+                    <p class="d-desc">Carne regular y carne dorada.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>1/2 Litro Dorado</span><span>$105</span></div>
+                    <p class="d-desc">Carne dorada (crujiente).</p>
+                    
+                    
+                </article>
+                
+            
+        </section>
+        
+        <section>
+            <h2 class="cat-title">Bebidas y Extras</h2>
+            
+            
+                <h3 class="sub-title">Bebidas</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Refrescos y aguas frescas</span><span>$15</span></div>
+                    <p class="d-desc">Variedad de sabores.</p>
+                    
+                    
+                </article>
+                
+            
+                <h3 class="sub-title">Extras</h3>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Requesón</span><span>$20</span></div>
+                    <p class="d-desc">Complemento.</p>
+                    
+                    
+                </article>
+                
+                <article class="dish">
+                    <div class="d-head"><span>Tortilla con asientos extra</span><span>$5</span></div>
+                    <p class="d-desc">Tortilla preparada con asientos.</p>
+                    
+                    
+                </article>
+                
+            
+        </section>
+        
+    </main>
+</div>
+</body>
+</html>
