@@ -18,6 +18,7 @@ collections:
       - { label: "Restaurant Name", name: "name", widget: "string", required: false }
       - { label: "Tagline", name: "tagline", widget: "string", required: false }
       - { label: "Categories", name: "categories", widget: "list", field: { label: "Category", name: "category", widget: "string" }, required: false }
+      - { label: "Accent Color", name: "accentColor", widget: "color", hint: "Theme color for this restaurant's pages (e.g., #0ea5e9 for seafood theme)", required: false, allowInput: true }
       - label: "Meta Information"
         name: "meta"
         widget: "object"

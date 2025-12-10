@@ -4,28 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Menus</title>
-    <style>
-        body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; background: #f4f4f4; }
-        
-        /* Navigation / Header */
-        nav { margin-bottom: 2rem; }
-        .back-link { text-decoration: none; color: #666; font-size: 0.9rem; font-weight: 500; }
-        .back-link:hover { color: #e6b800; }
-
-        h1 { color: #333; margin-bottom: 0.5rem; text-transform: capitalize; }
-        .subtitle { color: #666; margin-top: 0; margin-bottom: 2.5rem; }
-
-        /* Grid & Card Styles (Matches Index) */
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
-        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-decoration: none; color: inherit; transition: transform 0.2s; display: block; }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .card h2 { margin: 0 0 0.5rem 0; font-size: 1.25rem; color: #e6b800; } 
-        .card p { margin: 0; color: #666; font-size: 0.9rem; }
-        
-        .empty-state { grid-column: 1 / -1; text-align: center; color: #999; padding: 2rem; font-style: italic; }
-    </style>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
-<body>
+<body class="page-category">
 
     <nav>
         <a href="/" class="back-link">← Back to all menus</a>
@@ -55,7 +36,7 @@
                 <a href="/menus/maleducados/" class="card">
                     <h2>Maleducados</h2>
                     <p>Pan de Masa Madre</p>
-                    <div style="margin-top: 10px; font-size: 0.8em; color: #999;">
+                    <div class="card-meta">
                         Hermosillo
                     </div>
                 </a>

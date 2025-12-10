@@ -1,0 +1,86 @@
+/* Theme Overrides Example
+   
+   This file demonstrates how to create custom color themes for specific pages
+   by overriding the --accent-base variable and its related accent shades.
+   
+   To use a custom theme on a page:
+   1. Create a new CSS file like this one
+   2. Link it AFTER main.css in your HTML: <link rel="stylesheet" href="/styles/themes/your-theme.css">
+   3. Or add the theme selector class to your page
+   
+   Usage examples in HTML:
+   <body class="theme-seafood">  <!-- Apply theme-seafood class -->
+   <body class="theme-spicy">   <!-- Apply theme-spicy class -->
+*/
+
+/* Seafood Theme - Cool blues and teals */
+.theme-seafood {
+  --accent-base: #0ea5e9;           /* Sky blue */
+  --accent-darkest: #0369a1;        /* Dark blue */
+  --accent-dark: #0284c7;           /* Medium blue */
+  --accent-light: #7dd3fc;          /* Light blue */
+  --accent-lightest: #cffafe;       /* Very light blue */
+}
+
+/* Spicy Theme - Reds and oranges */
+.theme-spicy {
+  --accent-base: #ef4444;           /* Red */
+  --accent-darkest: #7f1d1d;        /* Dark red */
+  --accent-dark: #dc2626;           /* Medium red */
+  --accent-light: #fca5a5;          /* Light red */
+  --accent-lightest: #fee2e2;       /* Very light red */
+}
+
+/* Green Theme - Fresh and natural */
+.theme-green {
+  --accent-base: #22c55e;           /* Green */
+  --accent-darkest: #15803d;        /* Dark green */
+  --accent-dark: #16a34a;           /* Medium green */
+  --accent-light: #86efac;          /* Light green */
+  --accent-lightest: #dcfce7;       /* Very light green */
+}
+
+/* Purple Theme - Elegant and premium */
+.theme-purple {
+  --accent-base: #a855f7;           /* Purple */
+  --accent-darkest: #581c87;        /* Dark purple */
+  --accent-dark: #9333ea;           /* Medium purple */
+  --accent-light: #d8b4fe;          /* Light purple */
+  --accent-lightest: #f3e8ff;       /* Very light purple */
+}
+
+/* Rose Theme - Romantic and warm */
+.theme-rose {
+  --accent-base: #f43f5e;           /* Rose */
+  --accent-darkest: #831843;        /* Dark rose */
+  --accent-dark: #e11d48;           /* Medium rose */
+  --accent-light: #fb7185;          /* Light rose */
+  --accent-lightest: #ffe4e6;       /* Very light rose */
+}
+
+/* Coral Theme - Warm and energetic */
+.theme-coral {
+  --accent-base: #ff6b6b;           /* Coral */
+  --accent-darkest: #922b21;        /* Dark coral */
+  --accent-dark: #e74c3c;           /* Medium coral */
+  --accent-light: #f8b4b0;          /* Light coral */
+  --accent-lightest: #fadbd8;       /* Very light coral */
+}
+
+/* Usage in HTML - add the theme class to body or a parent element:
+
+   <body class="theme-seafood">
+     <!-- All children will inherit the seafood theme colors -->
+   </body>
+
+   Or for specific sections:
+   <div class="theme-spicy">
+     <!-- Just this section has the spicy theme -->
+   </div>
+
+   The color-mix() approach means:
+   - All accent-derived colors automatically adjust
+   - Shadows gain the accent's personality
+   - Neutral colors subtly tint with the accent
+   - Just override --accent-base and the 4 shade variables and you're done!
+*/

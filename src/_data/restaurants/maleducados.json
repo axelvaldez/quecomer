@@ -3,6 +3,7 @@
   "name": "Maleducados",
   "tagline": "Pan de Masa Madre",
   "categories": ["Pan", "Café", "Desayunos"],
+  "accentColor": "#22c55e",
   "meta": {
     "hours": "8am - 2pm",
     "social": "Maleducados",

@@ -3,6 +3,7 @@
   "name": "Taquería \"Don Jose\"",
   "tagline": "Ordene y Recoja",
   "categories": ["Tacos", "Desayunos"],
+  "accentColor": "#a855f7",
   "meta": {
     "hours": "No especificado",
     "social": "Taquería Don Jose",

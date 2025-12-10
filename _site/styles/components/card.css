@@ -1,0 +1,31 @@
+/* Restaurant Card Component */
+
+.card {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-duration) var(--transition-timing);
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card h2 {
+  color: var(--accent-base);
+}
+
+.card p {
+  color: var(--color-text-muted);
+}
+
+.card-meta {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: var(--color-text-light);
+}
