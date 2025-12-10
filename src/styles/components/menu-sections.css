@@ -17,8 +17,9 @@
 }
 
 .note {
-  background: var(--accent-lightest);
-  border-left: 4px solid var(--accent-base);
+  background: var(--note-bg);
+  border-left: 4px solid var(--note-border);
+  color: var(--note-text);
   padding: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
   font-size: var(--font-size-small);

@@ -3,32 +3,11 @@
   /* Primary Accent - Override this to change page theme */
   --accent-base: #e6b800;
 
-  /* Accent Shades - Derived from accent-base */
-  --accent-darkest: #a67d00;
-  --accent-dark: #cc9900;
-  --accent-light: #f5d966;
-  --accent-lightest: #fef3c7;
-
-  /* Colors with Accent Tint - Mix of neutral + accent for personality */
+  /* Base neutral colors - static defaults */
   --color-bg: #f4f4f4;
   --color-bg-dark: #f9f9f9;
   --color-text: #1a1a1a;
-  --color-text-muted: #666;
-  --color-text-light: #999;
   --color-white: #fff;
-  --color-border: #eee;
-  --color-border-dark: #1a1a1a;
-  
-  /* Accent-tinted versions (subtle accent influence in neutrals) */
-  --color-bg-tinted: color-mix(in srgb, var(--color-bg) 95%, var(--accent-base) 5%);
-  --color-bg-dark-tinted: color-mix(in srgb, var(--color-bg-dark) 95%, var(--accent-base) 5%);
-  --color-text-tinted: color-mix(in srgb, var(--color-text) 98%, var(--accent-base) 2%);
-  --color-border-tinted: color-mix(in srgb, var(--color-border) 90%, var(--accent-base) 10%);
-
-  /* Shadows */
-  --color-shadow-light: rgba(0, 0, 0, 0.05);
-  --color-shadow-medium: rgba(0, 0, 0, 0.1);
-  --color-shadow-active: rgba(0, 0, 0, 0.25);
 
   /* Typography */
   --font-family: system-ui, sans-serif;
@@ -55,12 +34,6 @@
   --border-width: 1px;
   --border-style: solid;
 
-  /* Shadow Definitions */
-  --shadow-sm: 0 2px 4px var(--color-shadow-light);
-  --shadow-md: 0 2px 5px var(--color-shadow-medium);
-  --shadow-lg: 0 5px 15px var(--color-shadow-medium);
-  --shadow-active: 0 4px 8px var(--color-shadow-active);
-
   /* Layout */
   --max-width-container: 600px;
   --max-width-page: 800px;
@@ -71,13 +44,63 @@
   --transition-timing: ease;
 }
 
+/* Accent-derived colors defined at body level so they recalculate when --accent-base is overridden */
+body {
+  /* Accent Shades - Derived from accent-base using color-mix */
+  --accent-darkest: color-mix(in srgb, var(--accent-base) 60%, #000);
+  --accent-dark: color-mix(in srgb, var(--accent-base) 80%, #000);
+  --accent-light: color-mix(in srgb, var(--accent-base) 60%, #fff);
+  --accent-lightest: color-mix(in srgb, var(--accent-base) 20%, #fff);
+  
+  /* All derived colors now depend on --accent-base */
+  --color-text-muted: color-mix(in srgb, var(--accent-base) 20%, var(--color-text) 80%);
+  --color-text-light: color-mix(in srgb, var(--accent-base) 10%, #999 90%);
+  --color-border: color-mix(in srgb, var(--accent-base) 8%, var(--color-bg) 92%);
+  --color-border-dark: color-mix(in srgb, var(--accent-base) 8%, var(--color-text) 92%);
+  
+  /* Accent-tinted versions */
+  --color-bg-tinted: color-mix(in srgb, var(--color-bg) 95%, var(--accent-base) 5%);
+  --color-bg-dark-tinted: color-mix(in srgb, var(--color-bg-dark) 95%, var(--accent-base) 5%);
+  --color-text-tinted: color-mix(in srgb, var(--color-text) 98%, var(--accent-base) 2%);
+  --color-border-tinted: color-mix(in srgb, var(--color-border) 90%, var(--accent-base) 10%);
+
+  /* Shadows derived from accent for unified feel */
+  --color-shadow-light: color-mix(in srgb, var(--accent-base) 5%, rgba(0, 0, 0, 0.05) 95%);
+  --color-shadow-medium: color-mix(in srgb, var(--accent-base) 8%, rgba(0, 0, 0, 0.1) 92%);
+  --color-shadow-active: color-mix(in srgb, var(--accent-base) 12%, rgba(0, 0, 0, 0.25) 88%);
+
+  /* Shadow Definitions */
+  --shadow-sm: 0 2px 4px var(--color-shadow-light);
+  --shadow-md: 0 2px 5px var(--color-shadow-medium);
+  --shadow-lg: 0 5px 15px var(--color-shadow-medium);
+  --shadow-active: 0 4px 8px var(--color-shadow-active);
+
+  /* Note / Info box tokens - all derived from accent */
+  --note-bg: color-mix(in srgb, var(--accent-base) 20%, #fff);
+  --note-border: var(--accent-base);
+  --note-text: var(--color-text);
+}
+
 /* Fallback for browsers that don't support color-mix */
 @supports not (color: color-mix(in srgb, white, black)) {
-  :root {
-    /* Fallback tinted colors - manually set to approximate the mix */
+  body {
+    /* Fallback tinted colors - statically approximated for mustard accent */
     --color-bg-tinted: #f4ede8;
     --color-bg-dark-tinted: #faf8f5;
     --color-text-tinted: #1a1a19;
     --color-border-tinted: #ede8df;
+    --color-text-muted: #4d4d26;
+    --color-text-light: #8c8c66;
+    --color-border: #e8dfc6;
+    --color-border-dark: #1a1a1a;
+    --accent-darkest: #a67d00;
+    --accent-dark: #cc9900;
+    --accent-light: #f5d966;
+    --accent-lightest: #fef3c7;
+    --note-bg: #fef3c7;
+    --note-border: #e6b800;
+    --note-text: #1a1a1a;
   }
 }
+
+
